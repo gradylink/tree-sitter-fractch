@@ -1,0 +1,35 @@
+================================================================================
+Hat script with assignment and control flow
+================================================================================
+
+when flag {
+  score = 0;
+  forever {
+    score += 1;
+    say "score: " ++ score;
+  }
+}
+
+--------------------------------------------------------------------------------
+
+(source_file
+  (script
+    (hat_script
+      (hat
+        (hat_event))
+      (block
+        (assignment_statement
+          (identifier)
+          (number))
+        (forever_statement
+          (block
+            (assignment_statement
+              (identifier)
+              (number))
+            (command_statement
+              (command)
+              (command_arguments
+                (binary_expression
+                  (string
+                    (string_content))
+                  (identifier))))))))))
